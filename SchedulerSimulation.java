@@ -158,7 +158,8 @@ public class SchedulerSimulation {
         // Define the time quantum in milliseconds (the maximum time a process gets in one round)
         // Choose a random number between 2000 and 5000 ms with a step of 1000 ms
         int timeQuantum = 2000 + random.nextInt(4) * 1000; // Random: 2000, 3000, 4000, or 5000
-        
+        // Counter to keep track of the number of context switches that occur during the simulation
+        int contextSwitchCount = 0;
         // Generate random number of processes between 10 and 20
         int numProcesses = 10 + random.nextInt(11); // Random number between 10 and 20
         
@@ -223,7 +224,8 @@ public class SchedulerSimulation {
         while (!processQueue.isEmpty()) {
             // Get the next thread from the queue (FIFO)
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
-            
+            contextSwitchCount++; // Increment context switch count
+            System.out.println(Colors.BOLD + Colors.CYAN + "  📊 Total Context Switches: " + Colors.BRIGHT_YELLOW + contextSwitchCount + Colors.RESET);
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
             System.out.print(Colors.MAGENTA + "│ " + Colors.RESET + Colors.BRIGHT_WHITE + "[" + Colors.RESET);
