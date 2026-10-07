@@ -39,7 +39,7 @@
 
 ## 🎥 Video Link
 
-**Video Link**: [Paste your video link here]
+**Video Link**: [https://youtu.be/0r7hJR6hvmk]
 
 > ⚠️ **WARNING:** The video must be **publicly accessible** ("Anyone with the link can view") on **Google Drive**, **YouTube (Unlisted or Public)** or any other cloud file-sharing system. A private, restricted or broken link counts as a **missing video (-1 mark)**.
 >
@@ -191,7 +191,7 @@ Structuring the technical answers to clearly reference specific parts of the sim
 1 hour 
 ---
 
-### Entry 5 - [7 oct and 11;20 PM]
+### Entry 5 - [7 oct and 10;20 PM]
 **What I did**:
 Recorded the demo video, added the public link to MY_WORK.md, and performed final checks for submission.
 **Details**:
