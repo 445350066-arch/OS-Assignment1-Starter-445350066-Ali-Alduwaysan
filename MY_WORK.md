@@ -29,11 +29,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [علي ابراهيم الدويسان] |
+| **Student ID** | [445350066] |
+| **University Email** | [445350066]@std.psau.edu.sa |
+| **GitHub Username** | [445350066-arch] |
+| **Repository Link** | [https://github.com/445350066-arch/OS-Assignment1-Starter-445350066-Ali-Alduwaysan.git] |
  
 ---
 
@@ -129,69 +129,80 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
+### Entry 1 - [4 oct , 9:30 AM]
 **What I did**:
-
+Forked the repository, set up the development environment, and updated my student ID.
 **Details**:
-
+Forked the starter repository to my GitHub account and cloned it locally using VS Code.
 **Challenges**:
-
+Needed to verify that Java JDK was correctly configured in VS Code for smooth compilation.
 **Solution**:
-
+Checked the Java extension settings and ran a test compilation via terminal.
 **Time spent**:
-
+30 minutes
 ---
 
-### Entry 2 - [Date and Time]
+### Entry 2 - [4 oct , 1;30 PM]
 **What I did**:
+Process Priority and queue ordering.
+
 
 **Details**:
+Added priority fields and attributes to the process configuration.
 
+Updated the process creation and queue logic so that incoming processes include priority details.
+Implement Feature 1: Add priority field and queue formatting.
 **Challenges**:
-
+Ensuring the priority formatting looked clean and correctly aligned in the terminal output.
 **Solution**:
-
+Utilized ANSI color codes and proper string formatting to display priority tags clearly.
 **Time spent**:
-
+1:15 hour
 ---
 
-### Entry 3 - [Date and Time]
+### Entry 3 - [6 oct, 8:30]
 **What I did**:
-
+Implemented Feature 3: Waiting time, turnaround time calculation, and final summary table.
 **Details**:
+Added completion, turnaround, and waiting time tracking logic to the Process class.
 
+Calculated performance metrics upon process completion.
 **Challenges**:
-
+Ensuring time elapsed is accurately tracked across multiple quanta rounds before calculating final turnaround times.
 **Solution**:
+Maintained a running simulation time variable (currentTime) updated dynamically after each quantum execution.
 
 **Time spent**:
-
+2 hours
 ---
 
-### Entry 4 - [Date and Time]
+### Entry 4 - [6 oct,11,40]
 **What I did**:
-
+Completed the documentation in MY_WORK.md including the development log entries and technical answers.
 **Details**:
+Filled out student information, reflection questions, and technical answers in MY_WORK.md.
 
+Verified that all commit logs align with the project timeline and requirements.
 **Challenges**:
-
+Structuring the technical answers to clearly reference specific parts of the simulation code and program output.
 **Solution**:
-
+: Reviewed the program terminal output
 **Time spent**:
-
+1 hour 
 ---
 
-### Entry 5 - [Date and Time]
+### Entry 5 - [7 oct and 11;20 PM]
 **What I did**:
-
+Recorded the demo video, added the public link to MY_WORK.md, and performed final checks for submission.
 **Details**:
-
+Recorded a 2-minute demo video showing the code execution in the terminal, all three features, and the commit history.
 **Challenges**:
+Ensuring the video length stayed within the 2 to 3 minutes limit while clearly explaining all required components.
 
 **Solution**:
-
+Followed the structured video script to keep the walkthrough concise, direct, and focused on terminal output.
 **Time spent**:
-
+1 hour
 ---
 
 ### Entry 6 - [Optional - Date and Time]
@@ -235,33 +246,33 @@
 
 > 💡 **TIP:** Talk about thread creation (`Runnable`, `Thread.start()`), waiting with `Thread.join()`, simulating work with `Thread.sleep()`, and what surprised you.
 
-**Your Answer:** *(5-7 sentences)*
+**I learned how to create threads using Runnable, start them with Thread.start()** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned how to create and manage threads using Runnable, Thread.start(),]
 
 ## Question 2: What was the most challenging part of this assignment?
 
 > 💡 **TIP:** Pick **one** specific challenge (understanding the code, one of the features, Git, the video) and say *why* it was hard.
 
-**Your Answer:** *(5-7 sentences)*
+**The most challenging part was tracking elapsed time accurately across multiple quantum** *(5-7 sentences)*
 
-[Write your answer here.]
+[The most challenging part was accurately tracking elapsed time across multiple quantum rounds to calculate waiting and turnaround times]
 
 ## Question 3: How did you overcome the challenges you faced?
 
 > 💡 **TIP:** Describe your method: reading documentation, adding `System.out.println` to debug, re-reading the README, testing after each small change, asking for help.
 
-**Your Answer:** *(5-7 sentences)*
+**I overcame challenges by reading documentation, adding System.out.println for debugging, and testing** *(5-7 sentences)*
 
-[Write your answer here.]
+[I overcame challenges through careful reading, incremental testing, and debugging code adjustments.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
 > 💡 **TIP:** Use real applications you know (web browser, game, mobile app, music player) and connect each one to what you built here.
 
-**Your Answer:** *(5-7 sentences)*
+**Multithreading can be applied in real-world applications like web browsers or media players to perform background tasks** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading enables web browsers to execute background downloads concurrently while keeping user interfaces responsive.]
 
 ### Optional: What would you like to learn more about?
 
@@ -293,7 +304,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[Threads share memory with low overhead,processes have independent memory spaces.]
 
 ## Question 2: Ready Queue Behavior
 
@@ -305,7 +316,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[Unfinished processes are re-queued to ensure fair CPU time sharing.]
 
 Example from my output:
 ```
@@ -323,15 +334,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [new Thread(process)]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [Thread.start]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [Thread.sleep() or join ]
 
 4. **Waiting**: [When and why would a thread be Waiting?]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [run()]
 
 ## Question 4: Real-World Applications
 
@@ -344,29 +355,29 @@ Example from my output:
 ### Example 1 (operating-system level): [Name of scenario]
 
 **Description**:
-[Describe the real-world scenario.]
+[A central timesharing server where multiple users execute independent shell processes and commands concurrently.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[it ensures absolute fairness and good responsiveness by giving each user's process an equal time slice (quantum) on the CPU without starvation.]
 
 ### Example 2: [Name of application/scenario]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[A network router managing multiple incoming data streams and packets that need to be processed iteratively and fairly.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It ensures high predictability and prevents any single bulky packet stream from monopolizing the router bandwidth.]
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1.Multithreading implementation using Java Runnable and managing thread lifecycle states.
+2.Round-Robin CPU scheduling algorithm logic
+3.The architectural differences and overhead between threads and processes.
 
 **Concepts I need to study more:**
-1.
-2.
+1.Advanced multi-threading synchronization and thread safety mechanisms.
+2.Performance analysis of complex CPU scheduling algorithms.
 
 ---
 
